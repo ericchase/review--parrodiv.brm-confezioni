@@ -7,8 +7,8 @@ import contactLogo from '../assets/icon/contact.svg';
 
 function Sidebar() {
   return (
-    <nav className="navbar flex flex-col justify-between fixed top-0 left-0 w-80 bg-base-100  h-full border-r-2 border-transparent z-100">
-      <div className="logo text-center py-6 mx-auto ">
+    <nav className="navbar flex flex-col justify-between fixed top-0 left-0 w-full bg-base-100  h-full border-r-2 border-transparent -translate-x-full z-100 transition duration-300 ease-in-out lg:translate-x-0 md:w-80">
+      <div className="logo text-center py-6 mx-auto">
         <img src={logo} alt="logo" />
       </div>
 

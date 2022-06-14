@@ -7,8 +7,8 @@ import Contatti from './pages/Contatti';
 function App() {
   return (
     <Router>
-      <Sidebar/>
-      <main className="page-content ml-80 ">
+      <Sidebar />
+      <main className="page-content lg:ml-80 z-0">
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/servizi" element={<Servizi />} />

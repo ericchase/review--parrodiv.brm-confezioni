@@ -10,8 +10,8 @@ function Social() {
     <ul className="nav-link social-link-list flex justify-between items-center w-48 mb-20 relative">
       <li>
         <Link
-          to="https://www.facebook.com/brmconfezioni/"
-          className="nav-link "
+          to={{ pathname: 'https://www.facebook.com/brmconfezioni/' }}
+          target="_blank"
         >
           <img
             src={facebookLogo}
@@ -25,7 +25,10 @@ function Social() {
         <div className="social-qr absolute left-2/4 w-20 md:w-28 bottom-11 md:bottom-14 -translate-x-2/4 hidden">
           <img src={qrInsta} alt="qrInsta" />
         </div>
-        <Link to="https://www.instagram.com/brmconfezioni/?hl=it">
+        <Link
+          to={{ pathname: 'https://www.instagram.com/brmconfezioni/?hl=it' }}
+          target="_blank"
+        >
           <img
             src={instaLogo}
             alt="instagram"
@@ -38,7 +41,10 @@ function Social() {
         <div className="social-qr absolute left-2/4 w-20 md:w-28 bottom-11 md:bottom-14 -translate-x-2/4 hidden ">
           <img src={qrWhatsapp} alt="qrInsta" />
         </div>
-        <Link to="tel:+39 0376550373">
+        <Link
+          to={{ pathname: 'https://api.whatsapp.com/send?phone=390376550373' }}
+          target="_blank"
+        >
           <img
             src={whatsappLogo}
             alt="whatsapp"
