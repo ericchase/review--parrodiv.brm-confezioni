@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <Sidebar/>
-      <main className="page-content ml-80">
+      <main className="page-content ml-80 ">
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/servizi" element={<Servizi />} />
