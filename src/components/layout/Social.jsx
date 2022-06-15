@@ -26,7 +26,7 @@ function Social() {
           <img src={qrInsta} alt="qrInsta" />
         </div>
         <Link
-          to={{ pathname: 'https://www.instagram.com/brmconfezioni/?hl=it' }}
+          to={{ pathName: 'https://www.instagram.com/brmconfezioni/?hl=it' }}
           target="_blank"
         >
           <img

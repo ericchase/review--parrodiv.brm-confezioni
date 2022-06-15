@@ -1,13 +1,22 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react'
+import MenuButton from './components/layout/MenuButton';
 import Sidebar from './components/layout/Sidebar';
 import Home from './pages/Home';
 import Servizi from './pages/Servizi';
 import Contatti from './pages/Contatti';
 
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false)
+
+  const toggleSidebar = (e) => {
+    setSidebarOpen(prevState => !prevState)
+  };
+
   return (
     <Router>
-      <Sidebar />
+      <Sidebar sidebarOpen={sidebarOpen}/>
+      <MenuButton toggleSidebar={toggleSidebar} />
       <main className="page-content lg:ml-80 z-0">
         <Routes>
           <Route path="/" exact element={<Home />} />
