@@ -15,7 +15,7 @@ function Hero() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="hero-overlay bg-opacity-50 w-5/6 h-3/4 p-3"></div>
+        <div className="hero-overlay bg-opacity-50 w-5/6 h-5/6 p-3"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-xs lg:max-w-xl">
             <h1 className="mb-5 text-4xl lg:text-7xl font-bold">

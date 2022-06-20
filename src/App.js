@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from 'react'
 import MenuButton from './components/layout/MenuButton';
 import Sidebar from './components/layout/sidebar/Sidebar';
+import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import Servizi from './pages/Servizi';
 import Contatti from './pages/Contatti';
@@ -23,6 +24,7 @@ function App() {
           <Route path="/servizi" element={<Servizi />} />
           <Route path="/contatti" element={<Contatti />} />
         </Routes>
+        <Footer />
       </main>
     </Router>
   );

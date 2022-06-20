@@ -7,3 +7,12 @@
 body {
   font-family: 'Chakra Petch', sans-serif;
 }
+
+@media screen and (min-width: 760px){
+  
+  .social-elem:hover .social-qr {
+      display: block;
+    }
+}
+
+

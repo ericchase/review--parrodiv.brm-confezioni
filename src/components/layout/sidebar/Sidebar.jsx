@@ -11,11 +11,11 @@ function Sidebar({ sidebarOpen, toggleSidebar }) {
       <nav
         className={
           sidebarOpen === false
-            ? 'navbar flex flex-col justify-between fixed top-0 left-0 w-full bg-gray-100  h-full border-r-2 border-transparent -translate-x-full z-50 transition duration-300 ease-in-out lg:translate-x-0 md:w-80'
-            : 'navbar flex flex-col justify-between fixed top-0 left-0 w-full bg-gray-100  h-full border-r-2 border-transparent z-50 transition duration-300 ease-in-out lg:translate-x-0 md:w-80'
+            ? 'navbar flex flex-col justify-between fixed top-0 left-0 w-full bg-gray-100  h-full border-r-2 border-transparent -translate-x-full z-50 transition duration-300 ease-in-out lg:translate-x-0 md:w-80 shadow-2xl'
+            : 'navbar flex flex-col justify-between fixed top-0 left-0 w-full bg-gray-100  h-full border-r-2 border-transparent z-50 transition duration-300 ease-in-out lg:translate-x-0 md:w-80 shadow-3xl'
         }
       >
-        <div className="logo text-center py-6 mx-auto">
+        <div className="logo text-center py-6 mx-auto mt-9">
           <img src={logo} alt="logo" />
         </div>
 

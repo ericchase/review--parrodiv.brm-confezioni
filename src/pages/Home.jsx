@@ -1,15 +1,12 @@
 import Hero from "../components/layout/Hero"
+import Servizi from "./Servizi";
  
 function Home() {
   return (
     <>
       <Hero />
        <section className="block md:hidden">
-          QUESTO <br />
-          SI <br />
-          VEDE <br />
-          PER <br />
-          MOBILE <br />
+         <Servizi />
        </section>
     </>
   );
