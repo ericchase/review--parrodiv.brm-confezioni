@@ -22,7 +22,7 @@ function Hero() {
               <span className="block mb-3 tracking-widest">BRM </span>{' '}
               CONFEZIONI
             </h1>
-            <p className="leading-8 mb-5 text-xl lg:text-2xl font-semibold leading-loose">
+            <p className="mb-5 text-xl lg:text-2xl lg:leading-9 font-semibold px-5">
               Siamo un'azienda con 30 anni di esperienza nella progettazione e
               produzione di intimo, beachwear e sportswear di alta qualità per i
               più grandi brand. Vantiamo una filiera produttiva completa dal

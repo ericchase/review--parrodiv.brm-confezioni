@@ -1,8 +1,8 @@
-import instaLogo from '../assets/icon/instagram.png';
-import whatsappLogo from '../assets/icon/whatsapp.png';
-import facebookLogo from '../assets/icon/facebook.png';
-import qrInsta from '../assets/qrcode/qrinstagram.png'
-import qrWhatsapp from '../assets/qrcode/qrwhatsapp.png'
+import instaLogo from '../../assets/icon/instagram.png';
+import whatsappLogo from '../../assets/icon/whatsapp.png';
+import facebookLogo from '../../assets/icon/facebook.png';
+import qrInsta from '../../assets/qrcode/qrinstagram.png';
+import qrWhatsapp from '../../assets/qrcode/qrwhatsapp.png';
 import { Link } from 'react-router-dom';
 
 function Social() {

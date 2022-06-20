@@ -1,18 +1,18 @@
 import Social from './Social';
-import logo from '../assets/logo/logo.png';
+import logo from '../../assets/logo/logo.png';
 import { NavLink } from 'react-router-dom';
-import homeLogo from '../assets/icon/home.svg';
-import servicesLogo from '../assets/icon/services.svg';
-import contactLogo from '../assets/icon/contact.svg';
+import homeLogo from '../../assets/icon/home.svg';
+import servicesLogo from '../../assets/icon/services.svg';
+import contactLogo from '../../assets/icon/contact.svg';
 
-function Sidebar({ sidebarOpen }) {
+function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
-    <div className="sidebar transition duration-300">
+    <div className="sidebar transition ease-in-out duration-300">
       <nav
         className={
           sidebarOpen === false
-            ? 'navbar flex flex-col justify-between fixed top-0 left-0 w-full bg-base-100  h-full border-r-2 border-transparent -translate-x-full z-20 transition duration-300 ease-in-out lg:translate-x-0 md:w-80'
-            : 'navbar flex flex-col justify-between fixed top-0 left-0 w-full bg-base-100  h-full border-r-2 border-transparent z-20 transition duration-300 ease-in-out lg:translate-x-0 md:w-80'
+            ? 'navbar flex flex-col justify-between fixed top-0 left-0 w-full bg-gray-100  h-full border-r-2 border-transparent -translate-x-full z-50 transition duration-300 ease-in-out lg:translate-x-0 md:w-80'
+            : 'navbar flex flex-col justify-between fixed top-0 left-0 w-full bg-gray-100  h-full border-r-2 border-transparent z-50 transition duration-300 ease-in-out lg:translate-x-0 md:w-80'
         }
       >
         <div className="logo text-center py-6 mx-auto">
@@ -31,6 +31,7 @@ function Sidebar({ sidebarOpen }) {
                   ? 'underline underline-offset-4 font-semibold text-xl self-center'
                   : 'font-semibold text-xl  self-center'
               }
+              onClick={toggleSidebar}
             >
               Home
             </NavLink>
@@ -47,9 +48,10 @@ function Sidebar({ sidebarOpen }) {
               to="/servizi"
               className={({ isActive }) =>
                 isActive
-                  ? 'underline underline-offset-4 font-semibold text-xl  self-center'
+                  ? 'underline underline-offset-4 font-semibold text-xl self-center'
                   : 'font-semibold text-xl  self-center'
               }
+              onClick={toggleSidebar}
             >
               Servizi
             </NavLink>
@@ -65,6 +67,7 @@ function Sidebar({ sidebarOpen }) {
                   ? 'underline underline-offset-4 font-semibold text-xl  self-center'
                   : 'font-semibold text-xl self-center'
               }
+              onClick={toggleSidebar}
             >
               Contatti
             </NavLink>
