@@ -1,6 +1,7 @@
 import imgHero from '../assets/bg/hero-1.png';
 import cucitoGif from '../assets/gif/cucito.gif';
 import cucitoHero from '../assets/gif/cucito-hero.gif';
+import cucitoHeroHd from '../assets/gif/cucito-hero-hd.gif';
 import { Link } from 'react-router-dom';
 
 function Hero() {
@@ -9,10 +10,10 @@ function Hero() {
       <div
         className="hero min-h-screen p-4 shadow-3xl"
         style={{
-          background: `url(${cucitoHero})`,
-          backgroundRepeat: 'no-repeat',
+          background: `url(${cucitoHeroHd}) no-repeat`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'center'
+
         }}
       >
         <div className="hero-overlay bg-opacity-50 w-5/6 h-5/6 p-3"></div>

@@ -17,7 +17,7 @@ function ServiceLayout({ title, text, photo, position }) {
         <img
           src={photo}
           alt="imgService"
-          className="shadow-2xl h-72 w-full max-w-2xl md:w-100 lg:h-96"
+          className="shadow-3xl h-72 w-full max-w-2xl md:w-100 lg:h-96"
         />
       </div>
     </div>

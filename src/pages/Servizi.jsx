@@ -1,8 +1,9 @@
 import ServiceLayout from '../components/layout/services/ServiceLayout';
 import campImg from '../components/assets/bg/service-1.png';
 import prodImg from '../components/assets/bg/service-2.jpg';
+import preformImg from '../components/assets/bg/preformImg.JPG';
+import ricercaMatImg from '../components/assets/bg/ricercaMat.JPG'
 import TitlePage from '../components/layout/TitlePage';
-import { motion, AnimatePresence } from 'framer-motion';
 
 function Servizi() {
   const services = [
@@ -20,13 +21,13 @@ function Servizi() {
     {
       title: 'RICERCA MATERIALI',
       text: 'Forniamo servizio di ricerca materiali tra cui tessuti, accessori, packaging.',
-      photo:  campImg ,
+      photo:  ricercaMatImg,
       position: 'left',
     },
     {
       title: 'PREFORMAZIONE',
       text: 'Preformiamo coppe di ogni misura internamente.',
-      photo:  campImg ,
+      photo:  preformImg ,
     },
     {
       title: 'CONFEZIONE',
