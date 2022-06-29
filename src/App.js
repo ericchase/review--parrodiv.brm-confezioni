@@ -6,6 +6,7 @@ import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import Servizi from './pages/Servizi';
 import Contatti from './pages/Contatti';
+import Faq from './pages/Faq';
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/servizi" element={<Servizi />} />
           <Route path="/contatti" element={<Contatti />} />
+          <Route path="/faq" element={<Faq />} />
         </Routes>
         <Footer />
       </main>

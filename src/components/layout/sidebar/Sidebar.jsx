@@ -1,13 +1,10 @@
 import Social from './Social';
 import logo from '../../assets/logo/logo.png';
-import { NavLink } from 'react-router-dom';
-import homeLogo from '../../assets/icon/home.svg';
-import servicesLogo from '../../assets/icon/services.svg';
-import contactLogo from '../../assets/icon/contact.svg';
+import SidebarList from './SidebarList';
 
 function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
-    <div className="sidebar transition ease-in-out duration-300">
+    <div className="sidebar">
       <nav
         className={
           sidebarOpen === false
@@ -19,60 +16,7 @@ function Sidebar({ sidebarOpen, toggleSidebar }) {
           <img src={logo} alt="logo" />
         </div>
 
-        <ul className="flex flex-col mb-8">
-          <li className="flex w-40 py-8 justify-start md:hover:-translate-x-3 transition ease-in-out delay-100">
-            <span className="w-12 text-xl md:mr-3">
-              <img src={homeLogo} alt="home" className="w-9 w-12" />
-            </span>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive
-                  ? 'underline underline-offset-4 font-semibold text-xl self-center'
-                  : 'font-semibold text-xl  self-center'
-              }
-              onClick={toggleSidebar}
-            >
-              Home
-            </NavLink>
-          </li>
-          <li className="flex w-40 py-8 justify-start md:hover:-translate-x-3 transition ease-in-out delay-100">
-            <span className="w-12 text-xl md:mr-3">
-              <img
-                src={servicesLogo}
-                alt="service"
-                className="w-9 w-12 align-center "
-              />
-            </span>
-            <NavLink
-              to="/servizi"
-              className={({ isActive }) =>
-                isActive
-                  ? 'underline underline-offset-4 font-semibold text-xl self-center'
-                  : 'font-semibold text-xl  self-center'
-              }
-              onClick={toggleSidebar}
-            >
-              Servizi
-            </NavLink>
-          </li>
-          <li className="flex w-40 py-8 justify-start md:hover:-translate-x-3 transition ease-in-out delay-100">
-            <span className="w-12 text-l  md:mr-3">
-              <img src={contactLogo} alt="contact" className="w-9 w-12" />
-            </span>
-            <NavLink
-              to="/contatti"
-              className={({ isActive }) =>
-                isActive
-                  ? 'underline underline-offset-4 font-semibold text-xl  self-center'
-                  : 'font-semibold text-xl self-center'
-              }
-              onClick={toggleSidebar}
-            >
-              Contatti
-            </NavLink>
-          </li>
-        </ul>
+        <SidebarList toggleSidebar={toggleSidebar}/>
 
         <Social />
       </nav>

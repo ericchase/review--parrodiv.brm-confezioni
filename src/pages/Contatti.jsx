@@ -1,9 +1,8 @@
-import TitlePage from "../components/layout/TitlePage"
-import ContactItem from "../components/layout/contacts/ContactItem";
+import TitlePage from '../components/layout/TitlePage'
+import ContactItem from '../components/layout/contacts/ContactItem'
 import message from '../components/assets/icon/message.svg'
 import mail from '../components/assets/icon/mail.svg'
 import location from '../components/assets/icon/location.svg'
-
 
 function Contatti() {
   const contatti = [
@@ -25,23 +24,25 @@ function Contatti() {
       contact: 'Via Sandro Pertini 2/A - Pegognaga (MN) 46020',
       img: location,
     },
-  ];
+  ]
 
   return (
-    <section className="min-h-screen w-full p-5 ">
+    <section className='min-h-screen w-full p-5 '>
       <TitlePage title={'Contatti'} />
-      <div className="lg:w-4/5 w-full p-3 mx-auto">
+      <div className='lg:w-4/5 w-full p-3 mx-auto'>
         {contatti.map((contatto, index) => (
-          <ContactItem key={index}
-          name={contatto.name}
-          link={contatto.link}
-          contact={contatto.contact}
-          img={contatto.img}
+          <ContactItem
+            key={index}
+            name={contatto.name}
+            link={contatto.link}
+            contact={contatto.contact}
+            img={contatto.img}
           />
         ))}
+
       </div>
     </section>
-  );
+  )
 }
 
 export default Contatti
