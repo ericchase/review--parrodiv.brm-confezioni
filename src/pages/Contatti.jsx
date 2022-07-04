@@ -27,21 +27,22 @@ function Contatti() {
   ]
 
   return (
-    <section className='min-h-screen w-full p-5 '>
+    <>
       <TitlePage title={'Contatti'} />
-      <div className='lg:w-4/5 w-full p-3 mx-auto'>
-        {contatti.map((contatto, index) => (
-          <ContactItem
-            key={index}
-            name={contatto.name}
-            link={contatto.link}
-            contact={contatto.contact}
-            img={contatto.img}
-          />
-        ))}
-
-      </div>
-    </section>
+      <section className='min-h-screen w-full p-5 '>
+        <div className='lg:w-4/5 w-full p-3 mx-auto'>
+          {contatti.map((contatto, index) => (
+            <ContactItem
+              key={index}
+              name={contatto.name}
+              link={contatto.link}
+              contact={contatto.contact}
+              img={contatto.img}
+            />
+          ))}
+        </div>
+      </section>
+    </>
   )
 }
 

@@ -1,9 +1,10 @@
-import ServiceLayout from '../components/layout/services/ServiceLayout';
-import campImg from '../components/assets/bg/service-1.png';
-import prodImg from '../components/assets/bg/service-2.jpg';
-import preformImg from '../components/assets/bg/preformImg.JPG';
+import ServiceLayout from '../components/layout/services/ServiceLayout'
+import campImg from '../components/assets/bg/service-1.png'
+import prodImg from '../components/assets/bg/service-2.jpg'
+import preformImg from '../components/assets/bg/preformImg.JPG'
 import ricercaMatImg from '../components/assets/bg/ricercaMat.JPG'
-import TitlePage from '../components/layout/TitlePage';
+import stiroImg from '../components/assets/bg/stiroImg.JPG'
+import TitlePage from '../components/layout/TitlePage'
 
 function Servizi() {
   const services = [
@@ -21,39 +22,40 @@ function Servizi() {
     {
       title: 'RICERCA MATERIALI',
       text: 'Forniamo servizio di ricerca materiali tra cui tessuti, accessori, packaging.',
-      photo:  ricercaMatImg,
+      photo: ricercaMatImg,
       position: 'left',
     },
     {
       title: 'PREFORMAZIONE',
       text: 'Preformiamo coppe di ogni misura internamente.',
-      photo:  preformImg ,
+      photo: preformImg,
     },
     {
       title: 'CONFEZIONE',
       text: 'Consegnamo il prodotto finito, stirato, etichettato e confezionato',
-      photo:  campImg ,
-      position: 'left'
+      photo: stiroImg,
+      position: 'left',
     },
-  ];
+  ]
 
   return (
-    <section className="services-container min-h-screen w-full p-5 ">
+    <>
       <TitlePage title={'Servizi'} />
-      <div className="services-container z-0 mt-12">
-
-        {services.map((service, index) => (
-              <ServiceLayout
-                key={index}
-                title={service.title}
-                text={service.text}
-                photo={service.photo}
-                position={service.position}
-              />
+      <section className='services-container min-h-screen w-full p-5 '>
+        <div className='services-container z-0 mt-12'>
+          {services.map((service, index) => (
+            <ServiceLayout
+              key={index}
+              title={service.title}
+              text={service.text}
+              photo={service.photo}
+              position={service.position}
+            />
           ))}
-      </div>
-    </section>
-  );
+        </div>
+      </section>
+    </>
+  )
 }
 
-export default Servizi;
+export default Servizi
