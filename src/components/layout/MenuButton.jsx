@@ -2,7 +2,7 @@ import { RiScissorsFill } from 'react-icons/ri';
 
 function MenuButton({ toggleSidebar }) {
   return (
-    <div className="toggle-menu fixed top-6 left-8 z-50 bg-black  cursor-pointer transition duration-500 btn btn-circle lg:hidden" onClick={toggleSidebar}>
+    <div className="toggle-menu fixed top-3 left-8 z-50 bg-black  cursor-pointer transition duration-500 btn btn-circle lg:hidden" onClick={toggleSidebar}>
       <button>
         <svg
           className="swap-off fill-current"
